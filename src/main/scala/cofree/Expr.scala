@@ -46,13 +46,11 @@ object Expr {
         case Square(e)                    => G.map(f(e))(Square.apply)
       }
 
-    def foldLeft[A, B](fa: Expr[A], b: B)(f: (B, A) => B): B = {
+    def foldLeft[A, B](fa: Expr[A], b: B)(f: (B, A) => B): B =
       ???
-    }
 
-    def foldRight[A, B](fa: Expr[A], lb: Eval[B])(f: (A, Eval[B]) => Eval[B]): Eval[B] = {
+    def foldRight[A, B](fa: Expr[A], lb: Eval[B])(f: (A, Eval[B]) => Eval[B]): Eval[B] =
       ???
-    }
   }
 
 }

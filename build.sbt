@@ -1,10 +1,8 @@
 name := "learn-recursion-schemes"
 version := "0.1"
-scalaVersion := "2.12.5"
-addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.6")
+scalaVersion := "2.12.10"
+addCompilerPlugin(("org.typelevel" %% "kind-projector" % "0.11.0").cross(CrossVersion.full))
 libraryDependencies ++= Seq(
-  "org.typelevel" %% "cats-free" % "1.1.0"
+  "org.typelevel" %% "cats-free" % "2.0.0"
 )
-scalafmtVersion in ThisBuild := "1.3.0"
-scalafmtOnCompile in Compile in ThisBuild := true
-scalafmtTestOnCompile in Compile in ThisBuild := true
+ThisBuild / scalafmtOnCompile := true
